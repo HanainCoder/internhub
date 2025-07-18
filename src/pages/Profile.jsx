@@ -45,7 +45,7 @@ const Profile = () => {
   return (
     <div className="max-w-5xl mx-auto mt-6 px-4 sm:px-6 py-6 bg-white dark:bg-gray-900 rounded-2xl shadow-lg font-['Inter'] space-y-10">
       
-      {/* Profile Header */}
+      {/* Profile  */}
       <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4 sm:gap-6 text-center sm:text-left">
         <UserCircle className="w-20 h-20 text-indigo-600 dark:text-indigo-400" />
         <div>
@@ -57,12 +57,12 @@ const Profile = () => {
         </div>
       </div>
 
-      {/* Change Password Form */}
+      {/* Change */}
       <div>
         <h3 className="text-xl sm:text-2xl font-semibold text-indigo-700 dark:text-indigo-300 mb-4">Change Password</h3>
         <form onSubmit={handleSubmit} className="flex flex-col space-y-4">
           
-          {/* Current Password */}
+          {/* Current pass */}
           <div>
             <label className="block text-sm font-medium text-gray-700 dark:text-gray-200 mb-1">Current Password</label>
             <input
@@ -77,7 +77,7 @@ const Profile = () => {
             )}
           </div>
 
-          {/* New Password */}
+          {/* New password */}
           <div>
             <label className="block text-sm font-medium text-gray-700 dark:text-gray-200 mb-1">New Password</label>
             <input
@@ -92,7 +92,7 @@ const Profile = () => {
             )}
           </div>
 
-          {/* Confirm Password */}
+          {/* Confirm password */}
           <div>
             <label className="block text-sm font-medium text-gray-700 dark:text-gray-200 mb-1">Confirm New Password</label>
             <input
@@ -119,7 +119,7 @@ const Profile = () => {
         </form>
       </div>
 
-      {/* Recent Activity */}
+      {/* Recent activity */}
       <div>
         <h3 className="text-xl sm:text-2xl font-semibold text-indigo-700 dark:text-indigo-300 mb-4">Recent Activity</h3>
         <ul className="space-y-3">

@@ -36,7 +36,7 @@ function Login() {
 
   const handleChange = (e) => {
     setFormValues({ ...formValues, [e.target.name]: e.target.value });
-    setErrors({ ...errors, [e.target.name]: '' }); // clear error as user types
+    setErrors({ ...errors, [e.target.name]: '' }); // it  clear error 
   };
 
   const handleSubmit = (e) => {
@@ -50,7 +50,7 @@ function Login() {
       <div className="bg-white w-full max-w-md px-6 py-8 sm:p-10 rounded-2xl shadow-xl">
         <div className="text-center mb-6">
           <img
-            src="public/internhub.png"
+            src={`${import.meta.env.BASE_URL}assets/internhub.png`}
             alt="Company Logo"
             className="mx-auto w-22 h-22 mb-3"
           />

@@ -7,7 +7,7 @@ import Internships from './pages/Internships';
 import Profile from './pages/Profile'
 function App(){
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/internhub">
       <Routes>
         <Route path="/" element={<Login />} />
          <Route path="/dashboard" element={<Layout />}>

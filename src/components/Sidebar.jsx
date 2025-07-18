@@ -14,7 +14,7 @@ const Sidebar = ({ isOpen, closeSidebar }) => {
 
   return  (
     <>
-      {/* Background overlay on mobile */}
+      {/* Background  */}
       {isOpen && (
         <div
           onClick={closeSidebar}
@@ -30,9 +30,9 @@ const Sidebar = ({ isOpen, closeSidebar }) => {
       >
         <div className="flex items-center gap-3">
           <img
-            src="/internhub.png"
+             src={`${import.meta.env.BASE_URL}assets/internhub.png`}
             alt="InternHub Logo"
-            className="w-12 h-12 rounded-md shadow"
+            className="w-18 h-18 rounded-md shadow"
           />
           <h2 className="text-2xl font-bold">InternHub Portal</h2>
         </div>

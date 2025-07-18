@@ -223,6 +223,7 @@ const Candidates = () => {
           ))}
         </div>
       </div>
+      
     </div>
   );
 };

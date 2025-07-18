@@ -8,12 +8,12 @@ const Layout = () => {
 
   return (
     <div className="flex h-screen overflow-hidden font-['Inter']">
-      {/* Sidebar */}
+      {/* sidebar */}
       <Sidebar isOpen={isSidebarOpen} closeSidebar={() => setSidebarOpen(false)} />
 
-      {/* Main Content Area */}
+      {/* main content */}
       <div className="flex flex-col flex-1">
-        {/* Topbar with toggle button */}
+        {/* Topbar  */}
         <Topbar toggleSidebar={() => setSidebarOpen(!isSidebarOpen)} />
 
         {/* main */}

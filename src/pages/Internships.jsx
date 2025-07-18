@@ -15,7 +15,7 @@ const Internships = () => {
 
   return (
     <div className="space-y-6 p-6 font-[Inter]">
-      {/* Header: Search + Post Button */}
+      {/* search*/}
       <div className="flex flex-col md:flex-row justify-between items-center gap-4">
         <input
           type="text"
@@ -33,7 +33,7 @@ const Internships = () => {
         </button>
       </div>
 
-      {/* Internship Cards Grid */}
+      {/* Internship Cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {filtered.map((intern) => (
           <InternshipCard key={intern.id} data={intern} />
@@ -50,8 +50,32 @@ const Internships = () => {
           }}
         />
       )}
+
+
+
+      {/* Stats Section */}
+      <div className="mt-12 bg-gradient-to-r from-purple-100 to-indigo-100 rounded-xl p-8 shadow-lg text-center">
+      <h2 className="text-2xl font-bold mb-4 text-indigo-700">Why InternHub?</h2>
+     <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+      <div>
+      <p className="text-4xl font-extrabold text-indigo-600">120+</p>
+      <p className="text-gray-700">Active Internships</p>
+     </div>
+      <div>
+      <p className="text-4xl font-extrabold text-indigo-600">300+</p>
+      <p className="text-gray-700">Hired Interns</p>
+      </div>
+      <div>
+      <p className="text-4xl font-extrabold text-indigo-600">50+</p>
+      <p className="text-gray-700">Partner Companies</p>
     </div>
-  );
+  </div>
+</div>
+    </div>
+    
+       
+    
+ );
 };
 
 export default Internships;

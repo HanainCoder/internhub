@@ -22,7 +22,7 @@ const Dashboard = () => {
     <div className="p-4 sm:p-6 min-h-screen bg-gradient-to-br from-[#F9FAFB] via-white to-[#E5E7EB] font-[Inter,DM Sans,sans-serif]">
       {/* Header */}
       <motion.div
-        className="bg-white/90 backdrop-blur-lg rounded-2xl p-6 sm:p-8 shadow-2xl max-w-4xl mx-auto mb-8 sm:mb-10 border border-indigo-200"
+        className="w-full max-w-4xl mx-auto bg-white/90 backdrop-blur-lg rounded-2xl p-6 sm:p-8 shadow-2xl mb-8 sm:mb-10 border border-indigo-200"
         initial={{ opacity: 0, y: -40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
@@ -37,7 +37,7 @@ const Dashboard = () => {
       </motion.div>
 
       {/* Stats Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 max-w-6xl mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 w-full max-w-6xl mx-auto">
         {[
           {
             title: 'Internships Posted',
@@ -57,7 +57,7 @@ const Dashboard = () => {
         ].map((item, i) => (
           <motion.div
             key={i}
-            className="bg-white rounded-xl p-4 sm:p-6 shadow-md border border-gray-200 flex flex-col items-start gap-3 hover:scale-[1.03] hover:shadow-lg transition-all duration-300"
+            className="w-full bg-white rounded-xl p-4 sm:p-6 shadow-md border border-gray-200 flex flex-col items-start gap-3 hover:scale-[1.03] hover:shadow-lg transition-all duration-300"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: i * 0.2 }}
@@ -71,7 +71,7 @@ const Dashboard = () => {
 
       {/* Chart */}
       <motion.div
-        className="bg-white rounded-2xl p-4 sm:p-6 shadow-lg border border-indigo-100 mt-8 sm:mt-10 max-w-4xl mx-auto"
+        className="w-full max-w-4xl mx-auto bg-white rounded-2xl p-4 sm:p-6 shadow-lg border border-indigo-100 mt-8 sm:mt-10"
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.8, duration: 0.8 }}
@@ -90,7 +90,7 @@ const Dashboard = () => {
 
       {/* Progress */}
       <motion.div
-        className="bg-white rounded-2xl p-4 sm:p-6 shadow-lg border border-indigo-100 mt-8 sm:mt-10 max-w-4xl mx-auto"
+        className="w-full max-w-4xl mx-auto bg-white rounded-2xl p-4 sm:p-6 shadow-lg border border-indigo-100 mt-8 sm:mt-10"
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 1, duration: 0.8 }}

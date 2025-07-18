@@ -15,7 +15,7 @@ const InternshipModal = ({ close, addInternship }) => {
   const handleChange = (e) => {
     const { name, value } = e.target;
     setForm((prev) => ({ ...prev, [name]: value }));
-    setErrors((prev) => ({ ...prev, [name]: '' })); // Clear error on change
+    setErrors((prev) => ({ ...prev, [name]: '' })); //for errors validation
   };
 
   const validate = () => {
@@ -56,7 +56,7 @@ const InternshipModal = ({ close, addInternship }) => {
         <h2 className="text-2xl font-bold text-indigo-600 mb-6">🎯 Post New Internship</h2>
         <form onSubmit={handleSubmit} className="space-y-4 text-sm font-medium text-gray-700">
 
-          {/* Title */}
+          {/* title */}
           <div>
             <input
               name="title"
@@ -70,7 +70,7 @@ const InternshipModal = ({ close, addInternship }) => {
             {errors.title && <p className="text-red-500 text-xs mt-1">{errors.title}</p>}
           </div>
 
-          {/* Description */}
+          {/* des */}
           <textarea
             name="description"
             placeholder="Description (optional)"
@@ -80,7 +80,7 @@ const InternshipModal = ({ close, addInternship }) => {
             value={form.description}
           />
 
-          {/* Department */}
+          {/* department */}
           <div>
             <input
               name="department"
@@ -94,7 +94,7 @@ const InternshipModal = ({ close, addInternship }) => {
             {errors.department && <p className="text-red-500 text-xs mt-1">{errors.department}</p>}
           </div>
 
-          {/* Duration */}
+          {/* duration */}
           <div>
             <input
               name="duration"
@@ -110,7 +110,7 @@ const InternshipModal = ({ close, addInternship }) => {
             {errors.duration && <p className="text-red-500 text-xs mt-1">{errors.duration}</p>}
           </div>
 
-          {/* Stipend */}
+          {/* stipend */}
           <div>
             <input
               name="stipend"
@@ -126,7 +126,7 @@ const InternshipModal = ({ close, addInternship }) => {
             {errors.stipend && <p className="text-red-500 text-xs mt-1">{errors.stipend}</p>}
           </div>
 
-          {/* Status Dropdown */}
+          {/* status */}
           <select
             name="status"
             className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-500"
@@ -137,7 +137,8 @@ const InternshipModal = ({ close, addInternship }) => {
             <option value="Closed">Closed</option>
           </select>
 
-          {/* Action Buttons */}
+          
+          
           <div className="flex justify-end gap-3 mt-6">
             <button
               type="button"
