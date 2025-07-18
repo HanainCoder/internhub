@@ -1,0 +1,51 @@
+const internships = [
+    {
+        id:1,
+        title:"Frontend Intern",
+        department: " Web Development",
+        duration: 6,
+        stipend: "10000",
+        status:"Open",
+    },
+    {
+        id:2,
+        title:"Backend Intern",
+        department: " Web Development",
+        duration: 4,
+        stipend: "5000",
+        status:"Closed",
+    },
+    {
+        id:3,
+        title:"AI Research Intern",
+        department: " Artificial Intelligence ",
+        duration: 5,
+        stipend: "15000",
+        status:"Closed",
+    },
+    {
+        id:4,
+        title:"Data Analyst",
+        department: " Data Science ",
+        duration: 6,
+        stipend: "20000",
+        status:"Open",
+    },
+    {
+        id:5,
+        title:"Data Entry",
+        department: " Data Science ",
+        duration: 7,
+        stipend: "20000",
+        status:"Open",
+    },
+    {
+        id:6,
+        title:"Python Developer",
+        department: " Web Development ",
+        duration: 6,
+        stipend: "20000",
+        status:"Closed",
+    },
+]
+export default internships;
